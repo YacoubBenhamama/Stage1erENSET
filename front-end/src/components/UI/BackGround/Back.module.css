@@ -1,0 +1,7 @@
+.BackGround{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.485);
+    z-index: 5;
+    color: white;
+}

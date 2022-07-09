@@ -1,8 +1,14 @@
+import Navbar from "./components/Nav/Navbar";
+import BackGround from "./components/UI/BackGround/Back" ;
+import Maincontent from "./components/MainContent/Maincontent";
+import { ReactDOM } from "react";
+
 const App = () => {
-    return(
-        <div>
-            <h2>HELLO</h2>
-        </div>
-    )
-}
-export default App ;
+  return (
+    <BackGround>
+      <Navbar />
+      <Maincontent />
+    </BackGround>
+  );
+};
+export default App;
