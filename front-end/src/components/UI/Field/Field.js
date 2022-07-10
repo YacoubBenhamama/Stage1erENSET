@@ -4,7 +4,7 @@ import { Fragment } from "react";
 
 const Field = (props) => {
   return (
-    <Fragment>
+    <div className={classes.field}>
       <label className={classes.fieldlabel} htmlFor={props.for}>
         {props.children}
       </label>
@@ -14,8 +14,9 @@ const Field = (props) => {
         value={props.value}
         onChange={props.Change}
       />
+
       {props.error && <div className={classes.msg}>{props.msg}</div>}
-    </Fragment>
+    </div>
   );
 };
 export default Field;
