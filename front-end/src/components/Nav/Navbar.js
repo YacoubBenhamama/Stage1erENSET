@@ -1,18 +1,23 @@
 import classes from './Navbar.module.css'
+import { NavLink , useNavigate} from 'react-router-dom' ;
 
 
 
 const Navbar = (props) => {
+    const navigate = useNavigate();
+    const _redirect = ()=>{
+        navigate('/');
+    };
 
 return (
     <div className= {classes.navbar}>
-        <div>
-            <p>AUCTION</p>
+        <div onClick={_redirect}>
+            <p >AUCTION</p>
         </div>
         <div>
-            <a href="#" >Contact</a>
-            <a href="#" >About</a>
-            <a href="#" >Sign UP</a>
+            <NavLink to="/Contact" >Contact</NavLink>
+            <NavLink to="/About" >About</NavLink>
+            <a href="#" onClick={props.Signup} >Sign UP</a>
         </div>
 
     </div>

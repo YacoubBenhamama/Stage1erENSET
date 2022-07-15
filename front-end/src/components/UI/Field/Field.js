@@ -1,6 +1,5 @@
 import classes from "./Field.module.css";
 
-import { Fragment } from "react";
 
 const Field = (props) => {
   return (
@@ -15,7 +14,7 @@ const Field = (props) => {
         onChange={props.Change}
       />
 
-      {props.error && <div className={classes.msg}>{props.msg}</div>}
+      {props.error && props.msg.map(element => <div key={element.toString()} className={classes.msg}>{element}</div>)}
     </div>
   );
 };

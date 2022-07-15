@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    }
+    
+    .navbar:first-child {
+      
+        text-align: center;
+    }
+    .navbar:last-child {
+    }
+    .navbar a {
+        text-decoration: none;
+        padding: 1rem;
+        color: white;
+    }
+    .navbar a:hover {
+        border-bottom: 0.1rem wheat solid;
+    }

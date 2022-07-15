@@ -1,11 +1,14 @@
-.btn{
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 10px 15px;
-    border: 0.001rem dashed ;
-
-
+.btn {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 0.001rem dashed;
 }
-.btn:hover{
-    cursor: pointer;
+.btn:hover {
+  cursor: pointer;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
 }
